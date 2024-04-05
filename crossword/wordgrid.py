@@ -1,4 +1,6 @@
-"""Crossword and Wordsearch creator on the fly."""
+"""
+Crossword and Wordsearch creator on the fly.
+"""
 
 import array
 import itertools
@@ -128,3 +130,15 @@ class WordGrid(tuple):
 
     def checkindex(self, r, c):
         return self.isvalid(r, c) and self[r][c] != self.DEFAULT_CHAR
+
+"""
+words = [
+    "ONE",
+    "TWO",
+    "THREE",
+    "FOUR",
+    "FIVE",
+]
+
+WordGrid(rows=5, cols=5, *words)
+"""
